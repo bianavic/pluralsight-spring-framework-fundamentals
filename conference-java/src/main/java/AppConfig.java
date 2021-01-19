@@ -11,10 +11,8 @@ import org.springframework.context.annotation.Scope;
 // bootstrap configuration | the start point of your app
 public class AppConfig {
 
-    // beans are by default a SINGLETON = will only
-    // execute the method the first time it is called
     @Bean(name = "speakerService")
-    @Scope(value = BeanDefinition.SCOPE_SINGLETON) // it is a singleton
+    @Scope(value = BeanDefinition.SCOPE_PROTOTYPE)
     public SpeakerService getSpeakerService() {
         SpeakerServiceImpl serviceImpl = new SpeakerServiceImpl(getSpeakerRepository());
         // serviceImpl.setRepository(getSpeakerRepository());
