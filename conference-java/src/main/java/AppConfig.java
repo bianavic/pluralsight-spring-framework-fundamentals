@@ -14,8 +14,9 @@ public class AppConfig {
     @Bean(name = "speakerService")
     @Scope(value = BeanDefinition.SCOPE_PROTOTYPE)
     public SpeakerService getSpeakerService() {
-        SpeakerServiceImpl serviceImpl = new SpeakerServiceImpl(getSpeakerRepository());
+        // SpeakerServiceImpl serviceImpl = new SpeakerServiceImpl(getSpeakerRepository());
         // serviceImpl.setRepository(getSpeakerRepository());
+        SpeakerServiceImpl serviceImpl = new SpeakerServiceImpl();
         return serviceImpl;
     }
 
