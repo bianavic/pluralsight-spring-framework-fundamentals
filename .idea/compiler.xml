@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="conference" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="conference" target="11" />
     </bytecodeTargetLevel>
+=======
+        <module name="com.pluralsight" />
+      </profile>
+    </annotationProcessing>
+>>>>>>> 2520dad0edaa375c6ed5d66f69149de70bf9997d
   </component>
 </project>
